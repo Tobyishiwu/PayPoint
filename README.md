@@ -1,40 +1,32 @@
-# PayPoint (simplebank-v2)
+# PayPoint 💳 (v2.0-Stable)
 
-PayPoint is a **bill payment web app** built with **Laravel** that lets users fund a wallet and pay for everyday services like **Airtime** and **Data Bundles** (more services coming).
-
-✅ Current working services:
-- Airtime Purchase ✅
-- Data Bundle Purchase ✅
+**PayPoint** is a robust bill payment web application built with **Laravel**. It allows users to manage a digital wallet, perform real-time balance checks, and purchase essential services like Airtime and Data with high security.
 
 ---
 
-## What PayPoint Does (MVP)
-
-- User authentication (register / login)
-- Wallet (account balance)
-- Bill payments:
-  - Airtime purchase (MTN, Airtel, Glo, 9mobile)
-  - Data bundle purchase (MTN, Airtel, Glo, 9mobile)
-- Transaction history
-- Receipt popup (Activity page)
-- Transaction PIN security (4-digit PIN)
-- Clean mobile-first UI (PayPoint Blue)
+### ✅ Core Features (Currently Live)
+* **Wallet System:** Real-time balance fetching with standardized account numbering (e.g., `SB-00000002`).
+* **Airtime Purchase:** Instant top-up for MTN, Airtel, Glo, and 9mobile.
+* **Data Bundles:** Smart two-step plan selection fetching live data via API.
+* **Security:** * 4-Digit Transaction PIN verification for all purchases.
+    * Direct-to-DB balance synchronization (fixed the ₦0 balance display error).
+* **UI/UX:** Clean, mobile-first "PayPoint Blue" design, optimized for Android devices like the **Infinix Note 8**.
 
 ---
 
-## Tech Stack
-
-- **Backend:** Laravel (PHP)
-- **Database:** MySQL
-- **Frontend:** Blade + CSS (mobile-first)
-- **Build Tooling:** Vite
-- **Integrations:** VTPass (sandbox / ready for live)
+### 🛠 Tech Stack
+* **Backend:** Laravel 11 (PHP 8.2+)
+* **Database:** MySQL (Relational tracking of Users and Transactions)
+* **Frontend:** Blade Templates + Custom CSS (Mobile-responsive)
+* **Integrations:** VTPass (Sandbox & Production ready)
 
 ---
 
-## Local Setup (Run on Your Laptop)
+### 🚀 Local Setup & Installation
 
-### 1) Clone the repo
+**1. Clone & Install**
 ```bash
-git clone https://github.com/tobyishiwu/simplebank-v2.git
-cd simplebank-v2
+git clone [https://github.com/tobyishiwu/paypoint.git](https://github.com/tobyishiwu/paypoint.git)
+cd paypoint
+composer install
+npm install && npm run build
